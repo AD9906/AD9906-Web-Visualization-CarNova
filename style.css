@@ -585,7 +585,7 @@ img {
   }
 
   .top-left span:has(i.fa-location-dot)::after {
-    content: "New York";
+    content: "Jyväskylä";
     position: absolute;
     left: 0.95rem;             /* SAFE distance from icon */
     top: 0;
