@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>CarNova — Premium Car Service & Detailing</title>
 
+  <meta name="description" content="CarNova is a premium car service and detailing platform offering diagnostics, repairs, washing plans, and online booking.">
+
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600;700&display=swap"
@@ -88,10 +90,12 @@
         <a href="tel:+10123456789"
           ><i class="fa-solid fa-phone"></i> +01 2345 6789</a
         >
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#"  aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"  aria-label="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"  aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </div>
@@ -193,7 +197,7 @@
               <div
                 class="text-set active"
                 data-bg-type="image"
-                data-bg="img/bg2.jpg"
+                data-bg="img/bg2.webp"
                 data-car="https://pngimg.com/uploads/mercedes/mercedes_PNG80201.png"
               >
                 <h1 class="glitch-text" data-text="FUTURE IS NOW">
@@ -225,7 +229,7 @@
               <div
                 class="text-set"
                 data-bg-type="image"
-                data-bg="img/bg3.jpeg"
+                data-bg="img/bg3.webp"
                 data-car="https://pngimg.com/uploads/bmw/bmw_PNG99559.png"
               >
                 <h1 class="glitch-text" data-text="ELECTRIC DREAM">
@@ -248,10 +252,12 @@
 
         <div class="hero-media">
           <img
-            id="heroCar"
-            src="https://pngimg.com/uploads/mercedes/mercedes_PNG80201.png"
-            alt="Premium car"
-            class="hero-car-img car-enter">
+          id="heroCar"
+          src="https://pngimg.com/uploads/mercedes/mercedes_PNG80201.png"
+          alt="Premium car"
+          width="600"
+          height="300"
+          class="hero-car-img car-enter">
         </div>
       </div>
     </section>
@@ -321,7 +327,7 @@
 
     <!-- LEFT SIDE: Image -->
     <div class="about-us-image wow fadeIn" data-wow-delay="0.1s">
-      <img src="img/aboutus.jpeg" alt="About CarNova">
+      <img src="img/aboutus.jpeg" alt="About CarNova" width="500" height="400">
       <div class="experience-badge">
         <h3>15 <span>Years</span></h3>
         <p>Experience</p>
@@ -452,7 +458,7 @@
         <div class="service-pane active" id="tab1">
           <div class="service-layout">
             <div class="service-img">
-              <img src="img/serv1.jpeg" alt="Diagnostic Test">
+              <img src="img/serv1.jpeg" alt="Diagnostic Test" width="500" height="400">
             </div>
             <div class="service-text">
               <h3>15 Years Of Experience In Auto Servicing</h3>
@@ -470,7 +476,7 @@
         <div class="service-pane" id="tab2">
           <div class="service-layout">
             <div class="service-img">
-              <img src="img/serv2.jpeg" alt="Engine Servicing">
+              <img src="img/serv2.jpeg" alt="Engine Servicing" width="500" height="400">
             </div>
             <div class="service-text">
               <h3>15 Years Of Experience In Engine Servicing</h3>
@@ -488,7 +494,7 @@
         <div class="service-pane" id="tab3">
           <div class="service-layout">
             <div class="service-img">
-              <img src="img/serv3.jpeg" alt="Tires Replacement">
+              <img src="img/serv3.jpeg" alt="Tires Replacement" width="500" height="400">
             </div>
             <div class="service-text">
               <h3>Premium Tires Replacement & Balancing</h3>
@@ -506,7 +512,7 @@
         <div class="service-pane" id="tab4">
           <div class="service-layout">
             <div class="service-img">
-              <img src="img/serv4.jpeg" alt="Oil Changing">
+              <img src="img/serv4.jpeg" alt="Oil Changing" width="500" height="400">
             </div>
             <div class="service-text">
               <h3>Advanced Oil Changing & Fluid Check</h3>
@@ -722,7 +728,7 @@
           <div class="form-grid">
 
             <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
+            <input type="email" placeholder="Your Email" aria-label="Email address" required>
 
             <!-- DYNAMIC SERVICE SELECT -->
             <select id="serviceSelect" required>
@@ -1023,9 +1029,7 @@
 </script>
 
 <!-- App -->
-<script src="script.js"></script>
-
-</body>
+<script src="script.js" defer></script>
 
 <!-- PRINT-ONLY BOOKING CONFIRMATION -->
 <div id="bookingPrintArea" class="print-area">
@@ -1040,5 +1044,7 @@
     Thank you for booking with CarNova.
   </p>
 </div>
+
+</body>
 
 </html>
