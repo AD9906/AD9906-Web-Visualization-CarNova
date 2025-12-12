@@ -114,13 +114,13 @@
     </a>
 
     <!-- DESKTOP NAV (unchanged) -->
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Primary navigation">
       <ul class="nav-links" id="navLinks">
         <li><a href="#home" class="nav-link active">HOME</a></li>
         <li><a href="service.html" class="nav-link">SERVICES</a></li>
         <li><a href="about.html" class="nav-link">ABOUT</a></li>
         <li class="dropdown">
-          <a class="nav-link">PAGES <i class="fa-solid fa-angle-down"></i></a>
+          <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">PAGES <i class="fa-solid fa-angle-down"></i></a>
           <ul class="dropdown-menu">
             <li><a href="team.html">Technicians</a></li>
             <li><a href="testimonial.html">Testimonial</a></li>
@@ -152,7 +152,7 @@
       <li class="mobile-has-sub">
   <div class="mobile-sub-header">
     <span>PAGES</span>
-    <button class="sub-toggle-btn" aria-label="Toggle submenu">
+    <button class="sub-toggle-btn"  type="button" aria-label="Toggle submenu">
       <span class="toggle-icon">+</span>
     </button>
   </div>
@@ -270,7 +270,7 @@
             <i class="fa-solid fa-certificate"></i>
           </div>
           <div class="about-card-content">
-            <h3 class="about-card-title">Quality Servicing</h3>
+            <h2 class="about-card-title">Quality Servicing</h2>
             <p class="about-card-text">
               Diam dolor diam ipsum sit amet diam et eos erat ipsum
             </p>
@@ -286,7 +286,7 @@
             <i class="fa-solid fa-users-cog"></i>
           </div>
           <div class="about-card-content">
-            <h3 class="about-card-title">Expert Workers</h3>
+            <h2 class="about-card-title">Expert Workers</h2>
             <p class="about-card-text">
               Diam dolor diam ipsum sit amet diam et eos erat ipsum
             </p>
@@ -299,7 +299,7 @@
             <i class="fa-solid fa-tools"></i>
           </div>
           <div class="about-card-content">
-            <h3 class="about-card-title">Modern Equipment</h3>
+            <h2 class="about-card-title">Modern Equipment</h2>
             <p class="about-card-text">
               Diam dolor diam ipsum sit amet diam et eos erat ipsum
             </p>
@@ -435,19 +435,19 @@
     <div class="services-grid wow fadeInUp" data-wow-delay="0.3s">
       <!-- LEFT SIDE TABS -->
       <div class="services-tabs">
-        <button class="service-tab active" data-tab="tab1">
+        <button class="service-tab active" data-tab="tab1" aria-label="Diagnostic service">
           <i class="fa-solid fa-car-side"></i>
           <span>Diagnostic Test</span>
         </button>
-        <button class="service-tab" data-tab="tab2">
+        <button class="service-tab" data-tab="tab2" aria-label="Engine Servicing">
           <i class="fa-solid fa-car"></i>
           <span>Engine Servicing</span>
         </button>
-        <button class="service-tab" data-tab="tab3">
+        <button class="service-tab" data-tab="tab3" aria-label="Tires Replacement">
           <i class="fa-solid fa-gear"></i>
           <span>Tires Replacement</span>
         </button>
-        <button class="service-tab" data-tab="tab4">
+        <button class="service-tab" data-tab="tab4" aria-label="Oil Changing">
           <i class="fa-solid fa-oil-can"></i>
           <span>Oil Changing</span>
         </button>
@@ -727,11 +727,11 @@
         <form>
           <div class="form-grid">
 
-            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Your Name" aria-label="Your name" required>
             <input type="email" placeholder="Your Email" aria-label="Email address" required>
 
             <!-- DYNAMIC SERVICE SELECT -->
-            <select id="serviceSelect" required>
+            <select id="serviceSelect" aria-label="Select a service" required>
               <option value="">Select A Service</option>
             </select>
 
@@ -740,10 +740,11 @@
               type="text"
               id="datetime"
               placeholder="Select Date & Time"
+              aria-label="Select date and time"
               required
             >
 
-            <textarea placeholder="Special Request (optional)"></textarea>
+            <textarea placeholder="Special Request (optional)" aria-label="Special request"></textarea>
 
             <button type="submit" class="btn1 btn-primary">Book Now</button>
           </div>
@@ -992,10 +993,10 @@
       <p>© <span id="year"></span> CarNova. All rights reserved.</p>
 
       <div class="footer-socials">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </div>
