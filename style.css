@@ -1695,7 +1695,8 @@ img {
   }
 
   .hero-car-img {
-    max-width: 330px;
+    max-width: 340px;
+    max-height: 235px;
     transform: scale(1.02);
     animation: float-car 6s ease-in-out infinite;
   }
